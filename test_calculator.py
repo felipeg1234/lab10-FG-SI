@@ -25,14 +25,14 @@ class TestCalculator(unittest.TestCase):
             log(0, 2)
 
     def test_multiply(self):
-        assert multiply(1, 2) == 2
+        assert mul(1, 2) == 2
 
     def test_divide(self):
-        assert divide(2, 1) == 2
+        assert div(2, 1) == 2
 
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
-            logarithm(0, 5)
+            log(0, 5)
 
     def test_hypotenuse(self):
         assert hypotenuse(0, 2) == 2
@@ -41,10 +41,6 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             square_root(-1)
         assert square_root(4) == 2
-
-    # Do not touch this
-    if __name__ == "__main__":
-        unittest.main()
 
 # Do not touch this
 if __name__ == "__main__":
