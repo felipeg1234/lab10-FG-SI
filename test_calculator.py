@@ -11,28 +11,28 @@ class TestCalculator(unittest.TestCase):
         assert add(2, 2) == 4
 
     def test_subtract(self):
-        assert sub(2, 2) == 0
+        assert subtract(2, 2) == 0
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
             div(0, 2)
 
     def test_logarithm(self):
-        assert log(8, 2) == 3
+        assert logarithm(8, 2) == 3
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
-            log(0, 2)
+            logarithm(0, 2)
 
     def test_multiply(self):
         assert mul(1, 2) == 2
 
     def test_divide(self):
-        assert div(2, 1) == 2
+        assert div(1, 2) == 2
 
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
-            log(0, 5)
+            logarithm(0, 5)
 
     def test_hypotenuse(self):
         assert hypotenuse(0, 2) == 2
