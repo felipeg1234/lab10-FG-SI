@@ -1,13 +1,9 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
+# https://github.com/felipeg1234/lab10-FG-SI
+# Partner 1: Felipe Gaitan
+# Partner 2: Seth Imig
 
 import math
 
-# First example
 def add(a, b): return a + b
 
 def sub(a, b): return a - b
